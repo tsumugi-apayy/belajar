@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/style.css">
+
+   <title>Responsive navbar - Bedimcode</title>
+</head>
+
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">Logo</a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#" class="nav__link">
+                     <i class="ri-arrow-right-up-line"></i>
+                     <span>Home</span>
+                  </a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#" class="nav__link">
+                     <i class="ri-arrow-right-up-line"></i>
+                     <span>Blogs</span>
+                  </a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#" class="nav__link">
+                     <i class="ri-arrow-right-up-line"></i>
+                     <span>About us</span>
+                  </a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#" class="nav__link">
+                     <i class="ri-arrow-right-up-line"></i>
+                     <span>Contact</span>
+                  </a>
+               </li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-large-line"></i>
+            </div>
+
+            <div class="nav__social">
+               <a href="https://www.instagram.com/sajowataru_/" target="_blank" class="nav__social-link">
+                  <i class="ri-instagram-line"></i>
+               </a>
+
+               <a href="https://github.com/tsumugi-apayy" target="_blank" class="nav__social-link">
+                  <i class="ri-github-line"></i>
+               </a>
+
+               <a href="https://x.com/CallMeDaff7" target="_blank" class="nav__social-link">
+                  <i class="ri-twitter-x-line"></i>
+               </a>
+            </div>
+         </div>
+
+         <!-- Toggle button -->
+         <div class="nav__actions">
+            <!-- Dark Mode Button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <!-- Mobile Menu -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main-content">
+      <!-- Insert page sections -->
+
+      <!-- Search -->
+      <section class="search-section">
+         <input type="text" id="searchInput" placeholder="Cari judul blog..." />
+
+         <!-- Category -->
+         <div class="category-container">
+            <button class="category-btn active" data-category="all">all</button>
+            <button class="category-btn" data-category="tech">Tech</button>
+            <button class="category-btn" data-category="codes">Codes</button>
+            <button class="category-btn" data-category="games">Games</button>
+         </div>
+      </section>
+
+      <!-- Blog Cards -->
+      <section class="blog-container" id="blogContainer">
+
+         <div class="blog-card" data-category="codes">
+            <div class="blog-card-inner">
+               <a href="#">
+                  <img src="https://picsum.photos/400/250?5" alt="#">
+               </a>
+               <div class="blog-content">
+                  <h2 class="blog-title">Belajar HTML Dasar</h2>
+                  <div class="blog-date">
+                     <i class="ri-calendar-line"></i>
+                     <span>May 16, 2026</span>
+                  </div>
+                  <p>
+                     Mengenai struktur dasar HTML untuk membuat website modern.
+                  </p>
+                  <a href="#" class="blog-btn">Read More</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="blog-card" data-category="codes">
+            <div class="blog-card-inner">
+               <img src="https://picsum.photos/400/250?2" alt="">
+               <div class="blog-content">
+                  <h2 class="blog-title">Tutorial CSS Modern</h2>
+                  <div class="blog-date">
+                     <i class="ri-calendar-line"></i>
+                     <span>May 16, 2026</span>
+                  </div>
+                  <p>
+                     Membuat tampilan website aesthetic dengan CSS modern.
+                  </p>
+                  <a href="#" class="blog-btn">Read More</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="blog-card" data-category="tech">
+            <div class="blog-card-inner">
+               <img src="https://picsum.photos/400/250?3" alt="">
+               <div class="blog-content">
+                  <h2 class="blog-title">RAM</h2>
+                  <div class="blog-date">
+                     <i class="ri-calendar-line"></i>
+                     <span>May 16, 2026</span>
+                  </div>
+                  <p>
+                     Menambahkan animasi dan fitur interaktif pada website.
+                  </p>
+                  <a href="#" class="blog-btn">Read More</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="blog-card" data-category="games">
+            <div class="blog-card-inner">
+               <a href="assets/pages/item.html">
+                  <img src="https://picsum.photos/400/250?4" alt="">
+               </a>
+               <div class="blog-content">
+                  <h2 class="blog-title">Items In Sailor Piece</h2>
+                  <div class="blog-date">
+                     <i class="ri-calendar-line"></i>
+                     <span>May 16, 2026</span>
+                  </div>
+                  <p>
+                     Semua item yang ada di Sailor Piece.
+                  </p>
+                  <a href="assets/pages/item.html" class="blog-btn">Read More</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="blog-card" data-category="games">
+            <div class="blog-card-inner">
+               <img src="https://picsum.photos/400/250?5" alt="">
+               <div class="blog-content">
+                  <h2 class="blog-title">Belajar Flexbox</h2>
+                  <div class="blog-date">
+                     <i class="ri-calendar-line"></i>
+                     <span>May 16, 2026</span>
+                  </div>
+                  <p>
+                     Memahami layout flexbox untuk desain website modern.
+                  </p>
+                  <a href="#" class="blog-btn">Read More</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="blog-card" data-category="tech">
+            <div class="blog-card-inner">
+               <img src="https://picsum.photos/400/250?6" alt="">
+               <div class="blog-content">
+                  <h2 class="blog-title">UI Jepang Modern</h2>
+                  <div class="blog-date">
+                     <i class="ri-calendar-line"></i>
+                     <span>May 16, 2026</span>
+                  </div>
+                  <p>
+                     Inspirasi desain website nuansa Jepang pink biru aesthetic.
+                  </p>
+                  <a href="#" class="blog-btn">Read More</a>
+               </div>
+            </div>
+         </div>
+
+      </section>
+
+   </main>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+
+</html>

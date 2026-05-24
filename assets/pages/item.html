@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fandom Blog</title>
+
+    <!-- REMIXICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+
+</head>
+
+<body>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+
+        <nav class="nav container">
+
+            <!-- LOGO -->
+            <a href="#" class="nav__logo">
+                Logo
+            </a>
+
+            <!-- MENU -->
+            <div class="nav__menu" id="nav-menu">
+
+                <ul class="nav__list">
+
+                    <!-- HOME -->
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+
+                            <i class="ri-arrow-right-up-line"></i>
+
+                            <span>Home</span>
+
+                        </a>
+                    </li>
+
+                    <!-- BLOG -->
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+
+                            <i class="ri-arrow-right-up-line"></i>
+
+                            <span>Blogs</span>
+
+                        </a>
+                    </li>
+
+                    <!-- ABOUT -->
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+
+                            <i class="ri-arrow-right-up-line"></i>
+
+                            <span>About us</span>
+
+                        </a>
+                    </li>
+
+                    <!-- CONTACT -->
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+
+                            <i class="ri-arrow-right-up-line"></i>
+
+                            <span>Contact</span>
+
+                        </a>
+                    </li>
+
+                    <!-- SEARCH -->
+                    <li class="nav__item nav-search-item">
+
+                        <div class="nav-search">
+
+                            <i class="ri-search-line"></i>
+
+                            <input type="text" id="fandomSearch" placeholder="Search item..." autocomplete="off">
+
+                            <!-- RESULT -->
+                            <div class="nav-search-result" id="fandomSearchResult"></div>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <!-- CLOSE -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+
+            </div>
+
+            <!-- ACTION -->
+            <div class="nav__actions">
+
+                <!-- DARK MODE -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!-- TOGGLE -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= FANDOM LAYOUT ================= -->
+
+    <section class="fandom-layout">
+
+        <div class="fandom-page">
+
+            <!-- HERO -->
+            <div class="fandom-hero">
+
+                <div class="fandom-overlay"></div>
+
+                <div class="fandom-hero-content">
+
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Fandom_logo.svg/2560px-Fandom_logo.svg.png"
+                        class="fandom-logo">
+
+                    <div>
+
+                        <h1>
+                            Sailor Piece Wiki
+                        </h1>
+
+                        <p>
+                            Explore all items, materials and collectibles.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CONTENT BOX -->
+            <div class="fandom-content-box">
+
+                <h1 class="fandom-title">
+                    Common Items
+                </h1>
+
+                <!-- TABLE -->
+                <div class="fandom-table-wrapper">
+
+                    <table class="fandom-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>Name</th>
+                                <th>Obtainment</th>
+                                <th>Utility</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <!-- ITEM -->
+                            <tr id="common-chest">
+                                <td>
+                                    <div class="fandom-item">
+                                        <img src="https://picsum.photos/300?1" alt="Common Chest">
+                                    </div>
+                                </td>
+                                <td>
+                                    1.8% drop rate from every npc.
+                                </td>
+                                <td>
+                                    Can be opened to obtain coins and gems.
+                                </td>
+                            </tr>
+
+                            <!-- ITEM -->
+                            <tr id="wood">
+                                <td>
+                                    <div class="fandom-item">
+                                        <img src="https://picsum.photos/300?2" alt="Wood">
+                                    </div>
+                                </td>
+                                <td>
+                                    5-7% drop rate from every npc.
+                                </td>
+                                <td>
+                                    Used for crafting items.
+                                </td>
+                            </tr>
+
+                            <!-- ITEM -->
+                            <tr id="iron-ore">
+                                <td>
+                                    <div class="fandom-item">
+                                        <img src="https://picsum.photos/300?3" alt="Iron Ore">
+                                    </div>
+                                </td>
+                                <td>
+                                    Found inside cave island.
+                                </td>
+                                <td>
+                                    Material for blacksmith crafting.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/blog.js"></script>
+</body>
+
+</html>

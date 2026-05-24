@@ -1,0 +1,421 @@
+/* ================= ROOT ================= */
+
+:root {
+
+  --fandom-bg: #090b12;
+
+  --fandom-card: #11131d;
+
+  --fandom-card-2: #171926;
+
+  --fandom-border: rgba(255,255,255,.06);
+
+  --fandom-text: #ffffff;
+
+  --fandom-text-light: #b8bfd3;
+
+  --fandom-shadow:
+    0 15px 40px rgba(0,0,0,.45);
+}
+
+/* ================= DARK MODE ================= */
+
+body.dark-theme {
+
+  --fandom-bg: #090b12;
+
+  --fandom-card: #11131d;
+
+  --fandom-card-2: #171926;
+
+  --fandom-border: rgba(255,255,255,.06);
+
+  --fandom-text: #ffffff;
+
+  --fandom-text-light: #b8bfd3;
+}
+
+/* ================= LAYOUT ================= */
+
+.fandom-layout {
+  min-height: 100vh;
+
+  padding-top: 7rem;
+
+  background:
+    linear-gradient(
+      180deg,
+      #07111f 0%,
+      #08192f 100%
+    );
+}
+
+/* ================= PAGE ================= */
+
+.fandom-page {
+  width: 100%;
+  max-width: 1150px;
+
+  margin: auto;
+
+  padding: 0 1rem 4rem;
+}
+
+/* ================= HERO ================= */
+
+.fandom-hero {
+  position: relative;
+
+  width: 100%;
+  height: 240px;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  background:
+    url("https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1600&auto=format&fit=crop")
+    center/cover;
+
+  margin-bottom: 2rem;
+}
+
+.fandom-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,.75),
+      rgba(0,0,0,.2)
+    );
+}
+
+.fandom-hero-content {
+  position: absolute;
+
+  left: 2rem;
+  bottom: 2rem;
+
+  display: flex;
+  align-items: center;
+
+  gap: 1.5rem;
+
+  z-index: 2;
+}
+
+.fandom-logo {
+  width: 120px;
+
+  object-fit: contain;
+}
+
+.fandom-hero-content h1 {
+  color: white;
+
+  font-size: 2.3rem;
+
+  margin-bottom: .4rem;
+}
+
+.fandom-hero-content p {
+  color: rgba(255,255,255,.7);
+}
+
+/* ================= CONTENT BOX ================= */
+
+.fandom-content-box {
+  background: var(--fandom-bg);
+
+  border-radius: 24px;
+
+  padding: 2rem;
+
+  border: 1px solid var(--fandom-border);
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.45);
+}
+
+/* ================= TITLE ================= */
+
+.fandom-title {
+  color: white;
+
+  font-size: 2rem;
+
+  margin-bottom: 1.5rem;
+}
+
+/* ================= TABLE ================= */
+
+.fandom-table-wrapper {
+  overflow-x: auto;
+
+  border-radius: 18px;
+
+  background: #0d1018;
+
+  border: 1px solid rgba(255,255,255,.05);
+}
+
+.fandom-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+/* HEADER */
+
+.fandom-table thead {
+  background: #232536;
+}
+
+.fandom-table th {
+  padding: 1.2rem;
+
+  text-align: center;
+
+  color: white;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  border: 1px solid rgba(255,255,255,.06);
+}
+
+/* BODY */
+
+.fandom-table td {
+  padding: 1.2rem;
+
+  border: 1px solid rgba(255,255,255,.05);
+
+  color: var(--fandom-text-light);
+
+  vertical-align: middle;
+
+  line-height: 1.8;
+}
+
+/* HOVER */
+
+.fandom-table tbody tr {
+  transition:
+    background .25s ease;
+}
+
+.fandom-table tbody tr:hover {
+  background: rgba(255,255,255,.03);
+}
+
+/* ================= ITEM ================= */
+
+.fandom-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fandom-item img {
+  width: 170px;
+  height: 170px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+
+  border: 2px solid rgba(255,255,255,.15);
+
+  background: #000;
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+.fandom-item img:hover {
+  transform: scale(1.03);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.45);
+}
+
+/* ================= NAV SEARCH ================= */
+
+@media screen and (min-width: 1150px) {
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav__menu {
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 2.5rem;
+  }
+
+  .nav-search-item {
+    margin-left: .5rem;
+  }
+
+  .nav-search {
+    position: relative;
+
+    width: 230px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+
+    gap: .6rem;
+
+    padding: 0 1rem;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.06);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    backdrop-filter: blur(10px);
+  }
+
+  .nav-search i {
+    color: rgba(255,255,255,.7);
+
+    font-size: 1rem;
+  }
+
+  .nav-search input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: .9rem;
+
+    font-family: inherit;
+  }
+
+  .nav-search input::placeholder {
+    color: rgba(255,255,255,.5);
+  }
+
+  /* RESULT */
+
+  .nav-search-result {
+    position: absolute;
+
+    top: calc(100% + 10px);
+
+    left: 0;
+
+    width: 100%;
+
+    background: #11131d;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,.05);
+
+    box-shadow:
+      0 10px 30px rgba(0,0,0,.3);
+
+    display: none;
+
+    z-index: 999;
+  }
+
+  .search-item {
+    padding: .9rem 1rem;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: .2s;
+  }
+
+  .search-item:hover {
+    background: rgba(255,255,255,.04);
+  }
+
+  /* SPACE */
+
+  .nav__actions {
+    margin-left: 1.5rem;
+  }
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+  .fandom-hero {
+    height: 200px;
+  }
+
+  .fandom-logo {
+    width: 90px;
+  }
+
+  .fandom-hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .fandom-item img {
+    width: 120px;
+    height: 120px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .fandom-content-box {
+    padding: 1rem;
+  }
+
+  .fandom-title {
+    font-size: 1.5rem;
+  }
+
+  .fandom-table td,
+  .fandom-table th {
+    padding: .9rem;
+  }
+
+  .fandom-item img {
+    width: 95px;
+    height: 95px;
+  }
+
+  .nav-search {
+    display: none;
+  }
+
+}
